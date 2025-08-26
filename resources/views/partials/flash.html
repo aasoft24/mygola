@@ -1,0 +1,7 @@
+{{ define "partials/flash" }}
+{{ if .FlashMessage }}
+<div class="bg-green-100 text-green-800 p-2 rounded mb-4">
+  {{ .FlashMessage }}
+</div>
+{{ end }}
+{{ end }}

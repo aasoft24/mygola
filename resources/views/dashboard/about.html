@@ -1,0 +1,13 @@
+
+{{ define "content" }}
+{{ template "partials/flash" . }}
+{{ template "include/success" . }}
+<div class="max-w-2xl mx-auto p-6 bg-white rounded-xl shadow">
+  <h1 class="text-3xl font-bold text-blue-600">{{ .getmsg }}</h1>
+    <h1 class="text-3xl font-bold text-blue-600">{{ .getfooter }}</h1>
+  <p class="mt-4">This is the about page</p>
+  <p class="mt-4">{{ .UserName }}</p>
+  <p class="mt-4">{{ .title }}</p>
+  <p class="mt-4">{{ .Now }}</p>
+</div>
+{{ end }}

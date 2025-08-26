@@ -1,0 +1,28 @@
+database:
+  default: mysql
+  connections:
+    mysql:
+      host: 127.0.0.1
+      port: 3306
+      database: mygola
+      username: root
+      password: 
+    pgsql:
+      host: 127.0.0.1
+      port: 5432
+      database: mygola
+      username: postgres
+      password: secret
+    sqlite:
+      path: mygola.db
+    sqlserver:
+      host: 127.0.0.1
+      port: 1433
+      database: mygola
+      username: sa
+      password: secret
+    mongodb:
+      uri: mongodb://root:secret@127.0.0.1:27017/mygola
+server:
+  host: 127.0.0.1
+  port: 9090

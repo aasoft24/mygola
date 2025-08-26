@@ -1,0 +1,10 @@
+<!-- views/blog/index.html -->
+{{define "content"}}
+<h1>Blog Posts</h1>
+{{range .Posts}}
+<div class="post">
+    <h2><a href="/blog/{{.ID}}">{{.Title}}</a></h2>
+    <p>{{.Content}}</p>
+</div>
+{{end}}
+{{end}}
